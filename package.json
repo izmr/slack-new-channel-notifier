@@ -1,0 +1,25 @@
+{
+  "name": "slack-new-channel-notifier",
+  "version": "1.0.0",
+  "description": "Notify when slack channel is created",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:izmr/slack-new-channel-notifier.git"
+  },
+  "keywords": [
+    "slack"
+  ],
+  "author": "izmr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/izmr/slack-new-channel-notifier/issues"
+  },
+  "homepage": "https://github.com/izmr/slack-new-channel-notifier",
+  "dependencies": {
+    "slackbotapi": "^1.3.7"
+  }
+}
