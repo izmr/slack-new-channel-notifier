@@ -13,7 +13,6 @@ console.info("channel name: " + notifyChannelName);
 
 var slack = new SlackAPI({
     'token': token,
-    'logging': true,
     'autoReconnect': true
 });
 
