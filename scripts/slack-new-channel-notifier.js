@@ -8,6 +8,9 @@ if (!token) {
     process.exit(1);
 }
 
+console.info("bot name: " + botName);
+console.info("channel name: " + notifyChannelName);
+
 var slack = new SlackAPI({
     'token': token,
     'logging': true,
@@ -15,6 +18,7 @@ var slack = new SlackAPI({
 });
 
 slack.on('channel_created', function (data) {
+	console.info("channel created.");
 	var createdChannelID = data.channel.id
 	var createdChannelName = data.channel.name
     var data = {
