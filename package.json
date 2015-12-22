@@ -25,6 +25,7 @@
   "homepage": "https://github.com/izmr/slack-new-channel-notifier",
   "dependencies": {
     "express": "^4.13.3",
+    "scoped-http-client": "^0.11.0",
     "slackbotapi": "^1.3.7"
   }
 }
