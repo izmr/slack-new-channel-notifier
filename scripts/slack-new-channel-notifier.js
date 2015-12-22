@@ -6,6 +6,7 @@ var HttpClient = require('scoped-http-client');
 var token             = process.env.SLACK_API_TOKEN;
 var botName           = process.env.SLACK_BOT_NAME;
 var notifyChannelName = process.env.SLACK_CHANNEL_NAME;
+var herokuUrl         = process.env.HEROKU_URL || 'http://localhost';
 
 // WebServer
 var express = require('express');
@@ -49,7 +50,7 @@ app.get('/', function(request, response) {
 });
 
 setInterval(function(){
-	HttpClient.create("http://localhost:" + process.env.PORT || 5000).get()(function(err, res, body){
+	HttpClient.create(herokuUrl).get()(function(err, res, body){
 		console.info("Alive and well");
 	});
 }, 1200000);
